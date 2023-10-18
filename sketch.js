@@ -48,14 +48,14 @@ function setup(){
 
 function draw(){
     console.log(bird.body.speed);
-    if(backgroundImg){
-        background(backgroundImg);
+    
+        background(bg);
     
         noStroke();
         textSize(35)
         fill("white")
         text("Score  " + score, width-300, 50)
-    }
+    
     Engine.update(engine);
     //strokeWeight(4);
     box1.display();
